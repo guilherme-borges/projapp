@@ -23,7 +23,6 @@ public class Project {
     private String name;
 
     @ManyToOne
-    @JoinColumn(name = "customer_id")
-    @Column(nullable = false)
+    @JoinColumn(name = "customer_ID")
     private Customer customer;
 }

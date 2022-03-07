@@ -12,9 +12,8 @@ import javax.persistence.*;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Entity
-@Table(name = "customer")
+@Table(name = "customers")
 public class Customer {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -22,7 +21,7 @@ public class Customer {
     @Column(nullable = false)
     private String name;
 
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String email;
 
     @Column(nullable = false)

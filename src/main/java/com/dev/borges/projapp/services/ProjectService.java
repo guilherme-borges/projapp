@@ -11,7 +11,7 @@ public class ProjectService {
 
     private ProjectRepository projectRepository;
 
-    public Project insert(Project project) {
+    public Project save(Project project) {
         return projectRepository.save(project);
     }
 }
